@@ -24,25 +24,31 @@
   <!--    </ul>-->
   <!--    <div class="dark_menu"><i class="material-icons">brightness_3</i></div>-->
   <!--  </header>-->
-  <nav>
-    <div class="nav-wrapper">
+  <header id="header">
+    <div class="nav-container">
       <a href="#" class="brand-logo">🦔신광천</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Hobby</a></li>
-        <input type="button"
-               value="dark"
-               onclick="
-               document.querySelector('body').style.backgroundColor='white';
-               document.querySelector('body').style.color='black';
-               document.querySelector('#home .home-content-desc').style.color='brown';
-               document.querySelector('#home .home-content-desc').style.fontStyle='bold';
-               document.querySelector('.goal-content').style.color='brown';
-        ">
-      </ul>
+      <div class="nav-menu">
+        <ul class="nav-menu-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#goal" class="nav-link">Goal</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Hobby</a>
+          </li>
+          <li class="nav-item">
+            <a class="material-icons nav-link" onclick="">brightness_5</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </nav>
+  </header>
+  
   
   <section id="home">
     <div class="home-grid-content home-container">
