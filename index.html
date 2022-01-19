@@ -70,8 +70,8 @@
   </section>
   
   <section id="goal">
-    <h1 class="menu_title">Goal</h1>
-    <p class="menu_sub_title">관심 직무 및 앞으로의 목표</p>
+    <h1 class="menu-title">Goal</h1>
+    <p class="menu-sub-title">관심 직무 및 앞으로의 목표</p>
     
     <div class="goal-container">
       <img class="goal-img" src="static/img/cat.png" alt="goal-img">
@@ -90,12 +90,12 @@
   </section>
   
   <section id="skills">
-    <h1 class="menu_title">Skills</h1>
+    <h1 class="menu-title">Skills</h1>
     <p class="menu_sub_title">한번이라도 사용해본 기술</p>
     
     <div class="skill-flex-container">
       <div class="skill-flex-box">
-        <p class="menu_sub_title">Frontend</p>
+        <p class="menu-sub-title">Frontend</p>
         <div class="skill-box">
           <p>HTML</p>
           <p>CSS</p>
@@ -107,10 +107,27 @@
   <script>
     function darkMode() {
       let dark = document.querySelector(".nav-item .material-icons").textContent;
+      let navItem = document.querySelectorAll(".nav-item a");
+      let menuTitle = document.querySelectorAll(".menu-title");
+      let subTitle = document.querySelectorAll(".menu-sub-title");
       if (dark === "brightness_5") {
         document.querySelector("body").style.backgroundColor = 'white';
-        document.querySelector("body").style.color = "#321911;";
         document.querySelector("#header").style.backgroundColor = "#eeeeee";
+        for (let i = 0; i <= navItem.length -1; i++) {
+          navItem[i].style.color = 'black';
+        }
+        document.querySelector(".brand-logo").style.color = 'black';
+        document.querySelector(".home-content-hi").style.color = 'black';
+        for (let i = 0; i <= menuTitle.length - 1; i++){
+          menuTitle[i].style.color = 'black';
+        }
+        document.querySelector(".home-content-desc").style.color = "rgb(129 42 15)";
+        document.querySelector(".goal-content").style.color = "rgb(129 42 15)";
+        for (let i = 0; i <= subTitle.length -1; i++){
+          subTitle[i].style.color = "rgb(129 42 15)";
+          subTitle[i].style.fontWeight = "bold";
+        }
+        document.querySelector(".goal-info-name").style.color = "rgb(129 42 15)";
       }
     }
   </script>
