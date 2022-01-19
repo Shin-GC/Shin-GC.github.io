@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
 </head>
-<body class="container">
+<body class="test-container">
   <!--  <header class="nav_header">-->
   <!--    <a href="#" class="nav_name">🦔신광천</a>-->
   <!--    <ul class="nav_list">-->
@@ -42,7 +42,7 @@
             <a href="#skills" class="nav-link">Hobby</a>
           </li>
           <li class="nav-item">
-            <a class="material-icons nav-link" onclick="">brightness_5</a>
+            <a class="material-icons nav-link" onclick="darkMode()">brightness_5</a>
           </li>
         </ul>
       </div>
@@ -104,6 +104,16 @@
       </div>
     </div>
   </section>
+  <script>
+    function darkMode() {
+      let dark = document.querySelector(".nav-item .material-icons").textContent;
+      if (dark === "brightness_5") {
+        document.querySelector("body").style.backgroundColor = 'white';
+        document.querySelector("body").style.color = "#321911;";
+        document.querySelector("#header").style.backgroundColor = "#eeeeee";
+      }
+    }
+  </script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
